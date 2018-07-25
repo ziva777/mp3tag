@@ -94,8 +94,6 @@ void rewrite_tag(const char *filename)
                     album_content->size) + 1;
     buf = malloc(buf_len);
 
-    printf("%d\n", buf_len);
-
     /* Set frames */
     str_copy(buf, buf_len, title_content->data, title_content->size);
     tag_set_title(buf, 0, tag);
@@ -186,7 +184,7 @@ void InputBufferProcess(InputBuffer *buf,
 
 void process_filename(const char *filename)
 {
-    // printf("%s\n", filename);
+    printf("%s\n", filename);
     rewrite_tag(filename);
 }
 
