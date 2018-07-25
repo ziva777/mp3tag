@@ -7,4 +7,5 @@ This program allow rewrite some tags of mp3 files so they can be played.
 ### Usage
 
 > find "$(cd .; pwd)" -name "*.mp3" > list.txt
+
 > cat list.txt | ./a.out
